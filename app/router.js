@@ -1,24 +1,16 @@
 
 module.exports = app => {
   app.get('/', app.controller.home.home.index);
-  app.get('/index', app.controller.home.home.index);
-  app.get('/client', app.controller.home.home.client);
-  app.get('/element', app.controller.element.element.element);
-  app.get('/pager', app.controller.home.home.pager);
-  app.get('/await/es6', app.controller.await.es6.index);
-  app.get('/await', app.controller.await.await.index);
-  app.get('/await/client', app.controller.await.await.client);
-  app.get('/await/element', app.controller.await.await.element);
-  app.get('/await/pager', app.controller.await.await.pager);
+  //默认跳转
+  app.get('/index', app.controller.index.index.index);
+  //首页跳转
+  app.get('/home', app.controller.home.home.index);
 
-  app.get('/about', app.controller.about.about.index);
-  app.get('/router', app.controller.router.router.index);
-  app.get('/dynamic', app.controller.dynamic.dynamic.index);
-  app.get('/app/api/article/list', app.controller.app.app.list);
-  app.get('/app/api/article/:id', app.controller.app.app.detail);
-  app.get('/app(/.+)?', app.controller.app.app.index);
-  app.get('/less', app.controller.css.css.less);
-  app.get('/css/module', app.controller.css.css.module);
-  app.get('/sass', app.controller.css.css.sass);
-  app.get('/test', app.controller.test.test.index);
+  //社区板块的跳转
+  app.get('/community', app.controller.community.community.index);
+  //商店板块跳转
+  app.get('/shop', app.controller.shop.shop.index);
+  //个人信息板块跳转
+  app.get('/me', app.controller.me.me.index);
+
 };

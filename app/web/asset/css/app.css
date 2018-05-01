@@ -1627,3 +1627,13 @@ ul.icode li .time {
     }
 
 }
+/* 修改vant中不合理的样式 */
+.van-nav-bar{
+    position: fixed !important;
+    top:0px !important;
+    z-index:999 !important;
+    width: 100%;
+}
+.main{
+    margin-top:-33px !important;
+}

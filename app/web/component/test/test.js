@@ -26,7 +26,6 @@ Vue.component('item', {
       return this.model.name + postfix;
     }
   },
-
   filters: {
     fancyfy(value) {
       return '--=' + value + '=--';

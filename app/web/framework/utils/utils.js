@@ -1,3 +1,4 @@
+//项目公共工具库
 export function removeHTML(input) {
   return input;
 }
