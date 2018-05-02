@@ -1,7 +1,7 @@
 
 module.exports = app => {
 
-  return class RouterController extends app.Controller {
+  return class CommunityController extends app.Controller {
 
     async index() {
       const { ctx } = this;
